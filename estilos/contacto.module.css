@@ -1,0 +1,238 @@
+.main {
+    width: 80%;
+    margin-left: 20%;
+    background-color: #f2eaed;
+}
+
+.banner {
+    width: 100%;
+    height: 40vh;
+    background-color: palevioletred;
+    position: relative;
+    display: block;
+}
+
+/*Animacion banner*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.textoBanner1 {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 50px;
+    top: 15%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.textoBanner2 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 400px;
+    top: 45%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.contenedorDer {
+    text-align: justify;
+    width: 50%;
+    margin: 30px 0 0 30px;
+}
+
+.contenedorIzq {
+    width: 50%;
+    border-right: 1px solid black;
+    margin: 30px 0 0 30px;
+}
+
+.titulos {
+    color: palevioletred;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 15px;
+    margin: 0 100px 30px 20px;
+}
+
+.listas {
+    list-style: none;
+    margin: 20px 0 20px 0;
+}
+
+.iconos {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.formulario {
+    background-color: rgba(194, 156, 99, 0.2);
+    width: 90%;
+    line-height: 3;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    border-radius: 10px;
+    border-color: palevioletred;
+    height: 40px;
+}
+
+.area {
+    border-radius: 10px;
+    border-color: palevioletred;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+}
+
+.botones {
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    margin: 30px 20px 0px 20px;
+    background-color: palevioletred;
+    color: white;
+    border-color: black;
+}
+
+.botones:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: palevioletred;
+    border-color: black;
+}
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+    .textoBanner1,
+    .textoBanner2 {
+        font-size: 2em;
+    }
+
+    .textoBanner2 {
+        margin-left: 150px;
+    }
+
+    .titulos {
+        font-size: 1em;
+    }
+
+    .texto {
+        font-size: 0.8em;
+    }
+
+    .listas {
+        font-size: 0.8em;
+    }
+
+    .iconos {
+        width: 3em;
+    }
+
+    .formulario {
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        height: auto;
+    }
+
+    .botones {
+        width: 80px;
+        height: auto;
+        font-size: 1em;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .textoBanner1,
+    .textoBanner2 {
+        font-size: 2em;
+    }
+
+    .textoBanner2 {
+        margin-left: 100px;
+    }
+
+    .titulos {
+        font-size: 1em;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedorDer {
+        width: 100%;
+    }
+
+    .contenedorIzq {
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 0.8em;
+    }
+
+    .listas {
+        font-size: 0.8em;
+    }
+
+    .iconos {
+        width: 3em;
+    }
+
+    .formulario {
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        height: auto;
+    }
+
+    .botones {
+        width: 80px;
+        height: auto;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,52 @@
+.nav {
+    list-style: none;
+    line-height: 50px;
+    padding-top: 40px;
+}
+
+.li:hover .link {
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 25px;
+}
+
+.menuActivo {
+    text-decoration: underline;
+}
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .nav {
+        line-height: 40px;
+        padding-right: 20px;
+    }
+
+
+
+    .link {
+        font-size: 1.2em;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .nav {
+        display: flex;
+        line-height: 40px;
+    }
+
+    .nav li {
+        display: block;
+        margin: 0 5px;
+    }
+
+    .link {
+        font-size: 1.8em;
+    }
+}

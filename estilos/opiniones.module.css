@@ -1,0 +1,92 @@
+.textos {
+    margin-top: 20px;
+}
+
+.inputs {
+    margin-top: 30px;
+    border-radius: 10px;
+    border-color: palevioletred;
+}
+
+.boton {
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    background-color: palevioletred;
+    color: white;
+    border-color: black;
+    margin-left: 140px;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.lista {
+    margin-top: 50px;
+    margin-left: -25px;
+}
+
+.elementoLista {
+    list-style: none;
+    margin-bottom: 50px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(234, 229, 229);
+    max-width: 80%;
+    overflow-wrap: break-word;
+}
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .textos {
+        font-size: 0.8em;
+    }
+
+    .lista {
+        font-size: 0.8em;
+    }
+
+    .formulario {
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        height: auto;
+    }
+
+    .boton {
+        width: 90px;
+        height: auto;
+        font-size: 1em;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .textos {
+        font-size: 0.8em;
+    }
+
+    .lista {
+        font-size: 0.8em;
+    }
+
+    .formulario {
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        height: auto;
+    }
+
+    .boton {
+        width: 90px;
+        height: auto;
+        font-size: 1em;
+    }
+}

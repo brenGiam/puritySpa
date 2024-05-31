@@ -1,0 +1,221 @@
+.main {
+    width: 80%;
+    margin-left: 20%;
+    background-color: #f2eaed;
+}
+
+.contenedorBanner {
+    position: relative;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: 55vh;
+}
+
+/*Animacion banner*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.textoBanner1 {
+    position: absolute;
+    color: palevioletred;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 4%;
+    top: 23%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.textoBanner2 {
+    position: absolute;
+    color: palevioletred;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 36%;
+    top: 50%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.titulos {
+    color: palevioletred;
+    padding: 40px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.textos {
+    text-align: justify;
+    padding: 35px 50px;
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.subtitulos {
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-left: 40px;
+}
+
+.listas {
+    margin-left: 30px;
+}
+
+.imagenes {
+    margin: 60px 20px 20px 50px;
+}
+
+.contenedor {
+    margin-right: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorDer {
+    text-align: justify;
+    margin-right: 30px;
+    position: relative;
+}
+
+.contenedorDer::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 200px;
+    width: 2px;
+    background-color: black;
+}
+
+.contenedorIzq {
+    text-align: justify;
+    margin: -100px 30px 0px 20px;
+    position: relative;
+}
+
+.contenedorIzq::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 200px;
+    width: 1px;
+    background-color: black;
+}
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .textoBanner1 {
+        font-size: 2em;
+    }
+
+    .textoBanner2 {
+        font-size: 2em;
+    }
+
+    .imagenes {
+        width: 200px;
+        height: auto;
+        margin: 10px 5px 5px 20px;
+    }
+
+    .contenedor {
+        display: grid;
+    }
+
+    .contenedorIzq {
+        margin: 0;
+    }
+
+    .titulos {
+        font-size: 1.2em;
+    }
+
+    .subtitulos {
+        font-size: 1em;
+    }
+
+    .textos {
+        font-size: 0.8em;
+    }
+
+    .listas {
+        font-size: 0.8em;
+    }
+
+    .contenedorDer::after {
+        right: -8px;
+    }
+
+}
+
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .textoBanner1 {
+        font-size: 2em;
+    }
+
+    .textoBanner2 {
+        font-size: 2em;
+    }
+
+    .imagenes {
+        width: 200px;
+        height: auto;
+        margin: 10px 5px 5px 20px;
+    }
+
+    .titulos {
+        font-size: 1.2em;
+    }
+
+    .subtitulos {
+        font-size: 1em;
+    }
+
+    .textos {
+        font-size: 0.8em;
+    }
+
+    .listas {
+        font-size: 0.8em;
+    }
+
+    .contenedorDer::after {
+        right: -8px;
+    }
+
+    .contenedor {
+        display: grid;
+    }
+
+    .contenedor img {
+        width: 100%;
+    }
+
+    .contenedorIzq {
+        margin: 0;
+    }
+
+
+}

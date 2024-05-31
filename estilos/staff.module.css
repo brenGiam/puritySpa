@@ -1,0 +1,71 @@
+.contenedor1 {
+    width: 390px;
+    height: 860px;
+    margin: 10px 10px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /9%);
+    border-radius: 30px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.nombre {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.cargo {
+    text-align: center;
+}
+
+.comentario {
+    text-align: justify;
+    padding: 20px 20px 0 20px;
+}
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .contenedor1 {
+        width: 250px;
+        height: 720px;
+    }
+
+    .nombre {
+        font-size: 1.2em;
+    }
+
+    .cargo {
+        font-size: 1em;
+    }
+
+    .comentario {
+        font-size: 0.8em;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .contenedor1 {
+        width: 180px;
+        height: 650px;
+    }
+
+    .nombre {
+        font-size: 1em;
+    }
+
+    .cargo {
+        font-size: 0.8em;
+    }
+
+    .comentario {
+        font-size: 0.7em;
+    }
+}

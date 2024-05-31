@@ -1,0 +1,39 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Media queries */
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .contenedor {
+        width: 20%;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 767px) {
+    .contenedor {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .logo {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
